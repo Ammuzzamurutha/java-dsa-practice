@@ -1,0 +1,47 @@
+import java.util.*;
+public class may28 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+          int age1;
+         String name1;
+         boolean isStudent1;
+            System.out.println("Enter your name: ");
+            name1 = sc.nextLine();
+            sc.nextLine(); // Consume the newline character left by nextLine() after reading name1
+            
+            System.out.println("Enter your age: ");
+            age1 = sc.nextInt();
+            sc.nextLine(); // Consume the newline character left by nextInt() after reading age1
+            System.out.print("Are you a student? (true/false): ");
+            isStudent1 = sc.nextBoolean();
+
+            if(name1.isEmpty()){
+                System.out.println("You did not enter a name. 😡");
+            }
+            else{
+                System.out.println("Hello, " + name1 + "! 😀");
+            }
+                //group 2
+         
+            if (age1 < 18) {
+                System.out.println("You are a minor.👶");
+            } 
+            else if (age1 >= 18 && age1 < 65) {
+                System.out.println("You are an adult.👩");
+            } 
+            else if(age1<0) {
+                System.out.println("You are not born yet. 😕");
+            }
+            
+            else {
+                System.out.println("You are a senior.🧓");
+            }
+
+         if(isStudent1) {
+            System.out.println("You are a student.🧑‍🎓");
+         }
+         else {
+            System.out.println("You are not a student.🏣");
+         } 
+    }
+}
