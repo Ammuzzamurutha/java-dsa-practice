@@ -1,0 +1,22 @@
+import java.util.*;
+public class basics1 {
+    public static void main(String[] args) {
+        //printf() method
+        String name="Spongebob";
+        int age=30;
+        double height=1.5;
+        boolean isemployed=true;
+        System.out.printf("Name is %s and age is %d his height is %.1f and is employed %b",name,age,height,isemployed);  
+        
+        double sal1=8;
+        double sal2=37;
+        double sal3=563;
+        double sal4=-223;
+
+        System.out.printf("%+3f\n",sal1);
+        System.out.printf("%+3f\n",sal2);
+        System.out.printf("%-3f\n",sal3);
+        System.out.printf("%-3f\n",sal4);  
+
+    }
+}
