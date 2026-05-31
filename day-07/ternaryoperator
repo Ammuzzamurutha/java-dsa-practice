@@ -1,0 +1,15 @@
+import java.util.*;
+public class basics1 {
+    public static void main(String[] args) {
+         //ternary operator
+         int num=21;
+          String result=(num%2==0)?"even":"odd";
+          System.out.println(result);
+          int hr=13;
+          String time=(hr<12)?"good morning":(hr<18)?"good afternoon":"good evening";
+          System.out.println(time);
+          //syntax of ternary operator
+          //condition?exp1:exp2
+          
+    }
+}
