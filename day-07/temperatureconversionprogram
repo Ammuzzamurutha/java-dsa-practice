@@ -1,0 +1,15 @@
+import java.util.*;
+public class basics1 {
+    public static void main(String[] args) {
+         //temperature conversion
+         System.out.println("Welcome to the temperature converter!");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the temperature value:");
+        double temp=sc.nextDouble();
+        System.out.println("Enter the temperature unit (c or f):");
+        char tempunit=sc.next().charAt(0);
+        double restemp=(tempunit=='c')? (temp*9/5)+32 : (temp-32)*5/9;
+        System.out.printf("The temperature in %c is %.2f %n", tempunit=='c'?'F':'C', restemp);
+
+    }
+}
